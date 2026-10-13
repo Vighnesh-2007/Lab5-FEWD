@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>Edu<span>Connect</span></h2>
+        <p>Student Admission Portal</p>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <div class="heading">
+                <p class="tag">ADMISSIONS OPEN · 2026</p>
+                <h1>Student Admission Form</h1>
+                <p>Fill in your details to apply for admission.</p>
+            </div>
+
+            <form id="admissionForm">
+                <h3>Personal Information</h3>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone"
+                               pattern="[0-9]{10}" maxlength="10"
+                               placeholder="10-digit number" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Gender *</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Prefer not to say</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="course">Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select course</option>
+                            <option>B.Tech CSE</option>
+                            <option>B.Tech IT</option>
+                            <option>B.Tech ECE</option>
+                            <option>BCA</option>
+                            <option>B.Sc Computer Science</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="qualification">Qualification *</label>
+                        <select id="qualification" name="qualification" required>
+                            <option value="">Select qualification</option>
+                            <option>Intermediate / 12th</option>
+                            <option>Diploma</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city"
+                               placeholder="Enter your city" required>
+                    </div>
+
+                    <div class="field full-width">
+                        <label for="address">Full Address *</label>
+                        <textarea id="address" name="address" rows="3"
+                                  placeholder="Enter your address" required></textarea>
+                    </div>
+                </div>
+
+                <label class="agreement">
+                    <input type="checkbox" id="agree" required>
+                    I confirm that the information provided is correct.
+                </label>
+
+                <button type="submit">Submit Application →</button>
+
+                <p id="message" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 EduConnect | Student Admission Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
